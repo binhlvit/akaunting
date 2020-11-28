@@ -72,6 +72,10 @@ mix
     .js('resources/assets/js/views/wizard/taxes.js', 'public/js/wizard')
     .js('resources/assets/js/views/wizard/finish.js', 'public/js/wizard')
 
+    //
+    .js('modules/CompanyData/Resources/assets/js/company-data.js', 'modules/CompanyData/Resources/assets/js/')
+    .js('modules/CompanyData/Resources/assets/js/company-data-index.js', 'modules/CompanyData/Resources/assets/js/')
+
     .sass('resources/assets/sass/argon.scss', 'public/css')
 
     .sourceMaps(false, 'inline-source-map');
