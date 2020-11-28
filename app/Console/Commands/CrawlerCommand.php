@@ -44,7 +44,7 @@ class CrawlerCommand extends Command
         $crawler = $client->request('GET', $url);
 
         $count  = 1;
-        while ($count < 50){
+        while ($count < 10){
             $form = $crawler->filter('#aspnetForm')->form();
             $form['ctl00$C$ANNOUNCEMENT_TYPE_IDFilterFld'] = 'NEW';
             $form['ctl00$C$HO_PROVINCE_IDFld'] = '87';
@@ -96,10 +96,6 @@ class CrawlerCommand extends Command
                     }
                 }
             );
-
-            if($count == 1){
-                $count = 30;
-            }
 
             $count ++;
             sleep(5);
