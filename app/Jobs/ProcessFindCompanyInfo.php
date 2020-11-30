@@ -46,8 +46,7 @@ class ProcessFindCompanyInfo implements ShouldQueue
             'address'               => 'table.table-taxinfo td[itemprop="address"]',
             'company_name_en'       => 'table.table-taxinfo td[itemprop="alternateName"]',
             'representative'        => 'table.table-taxinfo td > span[itemprop="name"]',
-            'phone'                 => 'table.table-taxinfo td[itemprop="telephone"]',
-            'type_text'             => 'table.table-taxinfo td[itemprop="telephone"]',
+            'phone'                 => 'table.table-taxinfo td[itemprop="telephone"]'
         ];
 
         foreach($arrayUpdates as $keyDb => $keyCrawler){
