@@ -33,6 +33,7 @@ class CompanyData extends Model
         'representative',
         'note',
         'type',
+        'type_text',
         'date_of_incorporation'
     ];
 
