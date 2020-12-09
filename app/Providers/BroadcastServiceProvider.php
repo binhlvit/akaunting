@@ -1,10 +1,13 @@
 <?php
 
 namespace App\Providers;
+use Illuminate\Support\Facades\Broadcast;
+use Illuminate\Support\ServiceProvider;
+
 
 use Illuminate\Support\ServiceProvider as Provider;
 
-class Broadcast extends Provider
+class BroadcastServiceProvider  extends Provider
 {
     /**
      * Bootstrap any application services.

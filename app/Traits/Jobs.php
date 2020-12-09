@@ -67,6 +67,6 @@ trait Jobs
     {
         $config = config('queue.default');
 
-        return ($config == 'sync') ? 'dispatch_now' : 'dispatch';
+        return ($config == 'sync') ? 'dispatch_now' : 'dispatch_now';
     }
 }
